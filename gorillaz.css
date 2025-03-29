@@ -384,8 +384,8 @@ blockquote {
     }
     
     table {
-        width: 80% !important; /* Garantir que a tabela ocupe toda a largura */
-        overflow-x: auto; /* Adiciona rolagem horizontal */
+        width: 90% !important; /* Garantir que a tabela ocupe toda a largura */
+        margin: 10px auto;
         display: block; /* Torna a tabela um bloco para facilitar o ajuste */
     }
 
