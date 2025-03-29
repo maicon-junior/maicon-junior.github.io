@@ -1,0 +1,560 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Título */
+#titulo {
+    font-family: fantasy;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Imagens */
+#foto, #foto2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+#foto img {
+    width: 80%; /* largura 80% da tela */
+    max-width: 800px; /* largura maxima */
+    height: auto; /* altura */
+    border-radius: 15px; /* borda da imagem redonda */
+
+}
+/* Efeito ao passar o mouse */
+#foto img:hover {
+    border: 5px solid #ff1493; /* borda rosa ao passar o mouse */
+}
+
+#foto2 img {
+    width: 80%; /* largura 80% da tela */
+    max-width: 350px; /* largura maxima */
+    height: auto; /* altura */
+    border-radius: 15px; /* borda da imagem redonda */
+    background-color: white;
+    padding: 10px;
+    border: solid black;
+}
+
+/* Sobre */
+#sobre {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ff1493;
+    padding: 25px;
+    width: 80%;
+    margin: 20px;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-size: 18px;
+}
+
+/* Listas centralizadas */
+#lista {
+    display: flex;
+    flex-direction: column; /* alinhamento em coluna */
+    align-items: center; /* deixar lista e os indicadores no cewntro */
+    text-align: center;
+    background-color: #ff1493;
+    padding: 10px;
+    border: solid black;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+}
+
+#lista2 {
+    display: flex;
+    flex-direction: column; /* alinhamento em coluna */
+    align-items: center; /* deixar lista e os indicadores no cewntro */
+    text-align: center;
+    background-color: #ff1493;
+    padding: 10px;
+    border: solid black;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+}
+
+#lista ol, #lista ul {
+    text-align: left;
+}
+
+#lista2 ol, #lista2 ul {
+    text-align: left;
+}
+
+/* Música */
+#musica {
+    text-align: center;
+    margin: 15px;
+    font-family: fantasy;
+    color: #000000;
+}
+
+blockquote {
+    font-style: italic;
+    color: #ffffff;
+    background-color: #6d00ea;
+    border: 5px groove #ff1493;
+    padding: 20px;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 5px 5px 25px black;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Botões */
+#botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+#botao a {
+    text-decoration: none;
+    background-color: #6d00ea;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+    border: 5px groove #ff1493;
+}
+
+#botao a:hover {
+    background-color: #ff1493;
+}
+
+#botao2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+
+}
+
+#ouvirAgora{
+ background-color: transparent;
+ border: solid transparent;
+
+}
+
+#ouvirAgora2 {
+    background-color: #6d00ea; /* Cor de fundo personalizada */
+    color: white; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+    padding: 15px 30px; /* Padding confortável */
+    border: 3px solid black; /* Tira a borda preta e a substitui por borda transparente */
+    border-radius: 10px; /* Borda arredondada */
+    display: inline-block; /* Faz com que o botão ocupe toda a área do padding */
+    transition: background-color 0.3s, border-color 0.3s, transform 0.5s, box-shadow 0.3s; /* Transições suaves */
+    text-align: center; /* Garante que o texto fique centralizado no botão */
+    cursor: pointer; /* Adiciona um cursor de mão para interatividade */
+}
+
+#ouvirAgora2:hover {
+    background-color: #ff1493; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o tamanho do botão */
+}
+
+/* Efeito de active */
+#ouvirAgora2:active {
+    border: 3px solid #ff1493; /* Cor da borda quando o botão é pressionado */
+}
+
+
+
+/* Rodapé */
+#rodape {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Estilo do Dropdown */
+.dropdown {
+    display: inline-block;
+    position: relative !important;
+}
+
+/* Estilo do botão */
+#dropdownMenuButton {
+    background-color: #6d00ea !important;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+}
+
+/* Esconde o menu de dropdown inicialmente */
+#dropdownMenu {
+    display: none;
+    background-color: #000000 !important;
+    min-width: 160px;
+    position: absolute !important;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    right: 10px;
+    top: 80% !important; /* Faz o menu aparecer logo abaixo do botão */
+    z-index: 100; /* Garante que fique sobre outros elementos */
+}
+
+.dropdown-item {
+    color: white !important;
+    padding: 12px 16px;
+    display: block;
+    background-color: #000000 !important;
+}
+
+.dropdown-item:hover {
+    background-color: #1d1d1d !important;
+}
+
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza a galeria */
+    gap: 20px; /* Espaço entre os itens */
+    padding: 20px;
+}
+
+#albumT {
+    font-family: fantasy;
+    color: #000000;
+}
+
+
+.album {
+    flex-direction: column;
+    text-align: center;
+    width: 200px; /* Largura das imagens */
+    margin-bottom: 20px; /* Espaço abaixo de cada item */
+}
+
+.album p {
+    font-family: fantasy;
+    font-size: 16px;
+    color: #000000 !important;
+    margin-top: 10px;
+    transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+/* Efeito de hover para mudar a cor do texto */
+.album:hover p {
+    color: #fc54aa !important; /* Cor que o texto vai ficar ao passar o mouse */
+}
+.album img {
+    width: 100%; /* Imagem ocupa toda a largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: transform 0.3s; /* Efeito de transição ao passar o mouse */
+}
+
+.album img:hover {
+    transform: translateY(-5px); /* Aumenta a imagem ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .album {
+        width: 150px; /* Reduz a largura das imagens em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .album {
+        width: 120px; /* Reduz ainda mais a largura em telas muito pequenas */
+    }
+}
+
+.show-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 3fr; /* Definindo larguras das colunas */
+    gap: 10px;
+    background-color: #6d00ea !important;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid black;
+}
+
+/* Cabeçalhos das colunas */
+.grid-header {
+    font-weight: bold;
+    text-align: center;
+    background-color: #ff1493 !important;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Alinhamento de células */
+.grid-container div {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.grid-container div:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Cor para as linhas pares */
+.grid-container div:nth-child(even) {
+    background-color: #e0e0e0; /* Cor para as linhas pares */
+}
+
+/* Hover - muda o fundo ao passar o mouse */
+.grid-container div:hover {
+    background-color: #ff1493; /* Cor de fundo ao passar o mouse */
+    color: white; /* Altera a cor do texto para branco */
+}
+
+@media (max-width: 599px) {
+    body {
+        background: linear-gradient(180deg, #ff6600, #690f2d) !important;
+        font-size: small !important;
+        flex-direction: column !important;
+    }
+
+    #foto3 {
+        display: block !important; /* Exibe a imagem */
+        text-align: center; /* Centraliza a imagem */
+    }
+
+    #foto3 img {
+        max-width: 400px !important; /* Define o tamanho máximo da imagem */
+        height: auto !important; /* Mantém a proporção */
+        margin: 20px;
+        border-radius: 20px;
+    }
+
+            /* Cor de botão ou link em telas pequenas */
+    button, a {
+        color: white;
+        background-color: rgb(71, 2, 31) !important;        
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    } 
+
+    button:hover, a:hover {
+        background-color: rgb(158, 47, 93) !important; /* Cor do botão/link ao passar o mouse */
+    }
+
+    #ouvirAgora {
+        background-color: transparent !important;
+        border: solid transparent !important;
+       
+    }
+
+}
+
+@media (min-width: 600px) {
+    body {
+        background: linear-gradient(180deg, blue, #00ffdd) !important;
+        font-size: medium !important;
+        flex-direction: row !important;
+    }
+
+    button, a {
+        color: white;
+        background-color: #ff1493 !important;        
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    } 
+
+    button:hover, a:hover {
+        background-color: #6d00ea !important; /* Cor do botão/link ao passar o mouse */
+    }
+
+    #ouvirAgora {
+        background-color: transparent !important;
+        border: solid transparent !important;
+       
+    }
+
+}
+@media (min-width: 900px) {
+    body {
+        background: linear-gradient(180deg, #6d00ea, #ff1493) !important;
+        font-size: larger !important;
+        flex-direction: row !important;
+    }
+
+    button, a {
+        color: white;
+        background-color: #6d00ea !important;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    } 
+
+    button:hover, a:hover {
+        background-color: #ff1493 !important; /* Cor do botão/link ao passar o mouse */
+    }
+
+    #ouvirAgora {
+        background-color: transparent !important;
+        border: solid transparent !important;
+       
+    }
+
+}
+
+#foto3 {
+    display: none ; /* Inicialmente oculta */
+}
+
+#musicais {
+    margin: 20px;
+    font-family: fantasy;
+    color: #000000;
+}
+
+#arte {
+/* Estilizando os gêneros musicais */
+ol > li {
+    color: black;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-left: 5px solid black; /* Borda lateral */
+    padding-left: 10px;
+    margin-bottom: 10px;
+    background-color: #6d00ea;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+/* Estilizando os artistas */
+ul > li {
+    color: #ddd;
+    font-size: 1.2em;
+    font-style: italic;
+    
+}
+
+/* Mudança de cor ao passar o mouse sobre os artistas */
+ul > li:hover {
+    color: black;
+    border: double #ff1493;
+    border-radius: 10px;
+}
+
+/* Destacando o primeiro e o último gênero */
+ol > li:first-child {
+    background-color: #6d00ea !important;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+ol > li:last-child {
+    background-color: #6d00ea !important;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Melhorando a hierarquia visual */
+ul {
+    margin-left: 20px;
+}
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    border: solid black;
+}
+
+/* Estilizando o cabeçalho */
+thead {
+    background-color: #6d00ea;
+    color: white;
+}
+
+/* Estilizando as células da tabela */
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border: solid black !important; 
+}
+
+/* Destaque para álbuns lançados após 2015 */
+.recent {
+    background-color: rgb(176, 179, 176);
+    font-weight: bold;
+}
+
+/* Alterando o fundo para álbuns antigos */
+.antigo {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+/* Efeito ao passar o mouse sobre qualquer linha (antigo ou recente) */
+tbody tr:hover {
+    background-color: #6d00ea; /* Cor roxa */
+    transition: 0.3s;
+}
+
+/* Efeito de mudança de cor para a linha "antigo" */
+tbody tr.antigo:hover {
+    background-color: #ff1493; /* Cor roxa */
+}
+
+/* Efeito de mudança de cor para a linha "recent" */
+tbody tr.recent:hover {
+    background-color: #6d00ea; /* Cor roxa */
+}
+
+/* Título da tabela */
+caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center !important;
+    caption-side: top;
+    font-family: fantasy;
+    color: #000000 !important;
+}
+
+.ACR {
+text-align: center;
+
+}

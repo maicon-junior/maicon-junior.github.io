@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gorillaz.css"> <!-- link com o arquivo CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Som Web</title>
+</head>
+<body>
+
+    <div class="container"> <!-- Div principal para centralizar tudo com flexbox -->
+
+        <header>
+            <h1 id="titulo">Gorillaz</h1> <!-- Título -->
+        </header>
+
+        <div id="foto">
+            <img src="https://rollingstone.com.br/media/_versions/2023/05/gorillaz-press-shot_widelg.jpg">
+        </div>
+
+        <div id="sobre">
+            <p>Gorillaz é uma banda virtual britânica criada por Damon Albarn e Jamie Hewlett.</p>
+            <p>O grupo mistura diversos estilos musicais, incluindo rock alternativo, hip-hop e eletrônica.</p>
+            <p>Seu conceito inovador combina música e animação, dando vida a personagens fictícios em seus videoclipes e álbuns.</p>
+        </div>
+
+        <div id="lista">
+            <h2>Álbuns Favoritos</h2>
+            <ol>
+                <li>Demon Days (2005)</li>
+                <li>Plastic Beach (2010)</li>
+                <li>Song Machine, Season One: Strange Timez (2020)</li>
+            </ol>
+        </div>
+            <div id="lista2">
+            <h2>Curiosidades</h2>
+            <ul>
+                <li>A banda é composta por quatro personagens fictícios: 2D, Murdoc, Noodle e Russel.</li>
+                <li>O primeiro álbum da banda foi lançado em 2001 e vendeu mais de 7 milhões de cópias.</li>
+                <li>Murdoc, o baixista, foi apresentado como o criador fictício da banda.</li>
+            </ul>
+        </div>
+
+        <div id="foto2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Gorillaz_logo.svg/1200px-Gorillaz_logo.svg.png">
+        </div>
+
+        <div id="musica">
+            <h2>Música Mais Reproduzida</h2>
+        </div>
+        <div>
+            <blockquote>
+                <p>Feel Good Inc.</p>
+                City's breaking down on a camel's back<br>
+                They just have to go 'cause they don't know wack<br>
+                So while you fill the streets, it's appealing to see<br>
+                You won't get undercounted 'cause you're damned and free<br>
+                You've got a new horizon, it's ephemeral style<br>
+                A melancholy town where we never smile<br>
+                And all I wanna hear is the message beep<br>
+                My dreams, they've got to kiss me, 'cause I don't get sleep, no
+            </blockquote>
+        </div>
+
+        <!-- Botão simples -->
+        <div id="botao">
+            <a target="_blank" href="https://youtu.be/HyHNuVaZJ-k?feature=shared"><b>Ouvir Agora</b></a>
+        </div>
+
+         <!-- Dropdown -->
+
+        <div class="d-flex justify-content-center">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown()">
+                🎵Gêneros Musicais
+                </button>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <a class="dropdown-item" href="https://youtu.be/HyHNuVaZJ-k?feature=shared">Rock - Feel Good Inc.</a>
+                    <a class="dropdown-item" href="https://youtu.be/04mfKJWDSzI?feature=shared">Pop- On Melancholy Hill</a>
+                    <a class="dropdown-item" href="https://youtu.be/C-yP9f0gadU?feature=shared">Jazz - Empire Ants</a>
+                    <a class="dropdown-item" href="https://youtu.be/5xQzNkkedKI?feature=shared">MPB - Latin Simone</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="albumT">
+        <h2>Álbuns</h2>
+        </div>
+
+        <div id="galeria" class="d-flex flex-wrap justify-content-center">
+            <div class="album">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/8/84/Demon_Days.jpg" alt="Demon Days" class="img-fluid">
+                <p>Demon Days</p>
+            </div>
+            <div class="album">
+                <img src="https://m.media-amazon.com/images/I/81EP2fxHLRL._UF1000,1000_QL80_.jpg" alt="Plastic Beach" class="img-fluid">
+                <p>Plastic Beach</p>
+            </div>
+            <div class="album">
+                <img src="https://m.media-amazon.com/images/I/81-19WGwkzL._UF1000,1000_QL80_.jpg" alt="Song Machine" class="img-fluid">
+                <p>Song Machine</p>
+            </div>
+            <div class="album">
+                <img src="https://m.media-amazon.com/images/I/81TisTeshjL._UF894,1000_QL80_.jpg" alt="The Fall" class="img-fluid">
+                <p>The Fall</p>
+            </div>
+            <div class="album">
+                <img src="https://pm1.aminoapps.com/6959/237580d30189aec67fed98801d3412c491c52915r1-340-340v2_uhq.jpg" alt="Humanz" class="img-fluid">
+                <p>Humanz</p>
+            </div>
+            <div class="album">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/5/53/Gorillaz_-_Gorillaz_-_2001.jpg" alt="Gorillaz" class="img-fluid">
+                <p>Gorillaz</p>
+            </div>
+            <div class="album">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/c/c6/D-Sides.jpg" alt="D-Sides" class="img-fluid">
+                <p>D-Sides</p>
+            </div>
+            <div class="album">
+                <img src="https://m.media-amazon.com/images/I/81YWusnFAXL._UF1000,1000_QL80_.jpg" alt="The Now Now" class="img-fluid">
+                <p>The Now Now</p>
+            </div>
+        </div>
+
+             <!-- Botão estilizado -->
+             <div id="botao2">
+                <button id="ouvirAgora"><a id="ouvirAgora2" target="_blank" href="https://youtu.be/1V_xRb0x9aw?feature=shared">Ouvir Agora</a></button>
+            </div>
+
+        <div class="show-grid">
+            <!-- Grid de Shows -->
+            <div class="grid-container">
+                <!-- Cabeçalhos das colunas -->
+                <div class="grid-header">Data</div>
+                <div class="grid-header">Cidade</div>
+                <div class="grid-header">Local</div>
+                <div class="grid-header">Artista</div>
+    
+                <!-- Linha 1 -->
+                <div>01/04/2025</div>
+                <div>São Paulo</div>
+                <div>Arena Corinthians</div>
+                <div>Gorillaz</div>
+                <!-- Linha 2 -->
+                <div>05/04/2025</div>
+                <div>Rio de Janeiro</div>
+                <div>Maracanã</div>
+                <div>Gorillaz & Supla</div>
+                <!-- Linha 3 -->
+                <div>10/04/2025</div>
+                <div>Belo Horizonte</div>
+                <div>Mineirão</div>
+                <div>Gorillaz</div>
+                <!-- Linha 4 -->
+                <div>15/04/2025</div>
+                <div>Porto Alegre</div>
+                <div>Beira-Rio</div>
+                <div>Gorillaz & Metallica</div>
+                
+                <!-- Linha 5 -->
+                <div>26/04/2025</div>
+                <div>Curitiba</div>
+                <div>Pedreira Paulo Leminski</div>
+                <div>Gorillaz & Travis Scott</div>
+                
+            </div>
+        </div>
+
+
+        <div id="foto3">
+            <img src="https://i.discogs.com/W8aNCV5Hqq7APtPU5xa2hioWzzImvBqsry0hBVjJNug/rs:fit/g:sm/q:90/h:436/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTYzNzgt/MTY4MTEyMzI4MS0y/NjcwLmpwZWc.jpeg">
+        </div>
+
+        <div id="musicais">
+        <h2>Gêneros Musicais e Artistas</h2>
+        </div>
+        
+    <div id="arte" >
+    
+        <ol>
+            <li>Rock
+                <ul>
+                    <li>Queen</li>
+                    <li>Gorillaz</li>
+                </ul>
+            </li>
+            <li>Pop
+                <ul>
+                    <li>Michael Jackson</li>
+                    <li>Madonna</li>
+                </ul>
+            </li>
+            <li>Rap
+                <ul>
+                    <li>2Pac</li>
+                    <li>Drake</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <table>
+        <caption>Álbuns Clássicos e Recentes</caption>
+        <thead>
+            <tr class="ACR">
+                <th>Artista</th>
+                <th>Álbum</th>
+                <th>Ano de Lançamento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="antigo">
+                <td>Gorillaz</td>
+                <td>Gorillaz</td>
+                <td>2001</td>
+            </tr>
+            <tr class="antigo">
+                <td>Gorillaz</td>
+                <td>Demon Days</td>
+                <td>2005</td>
+            </tr>
+            <tr class="recent">
+                <td>Gorillaz</td>
+                <td>Humanz</td>
+                <td>2017</td>
+            </tr>
+            <tr class="recent">
+                <td>Gorillaz</td>
+                <td>The Now Now</td>
+                <td>2018</td>
+            </tr>
+            <tr class="recent">
+                <td>Gorillaz</td>
+                <td>Cracker Island</td>
+                <td>2023</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <footer>
+        <h2 id="rodape">Maicon Gonçalves Martins Junior e Gabriel Eduardo Feuser Quindel / 1°A</h2>
+    </footer>
+        
+    </div> <!-- Fim da div principal -->
+
+    <script src="gorillaz.js"></script> <!-- link para o arquivo JS -->
+
+</body>
+</html>
