@@ -385,8 +385,8 @@ blockquote {
     
     table {
         width: 90% !important; /* Garantir que a tabela ocupe toda a largura */
-        margin: 10px auto;
-        display: block; /* Torna a tabela um bloco para facilitar o ajuste */
+        margin: 10px auto !important;
+        display: block !important; /* Torna a tabela um bloco para facilitar o ajuste */
     }
 
     /* Ajustes nas células */
