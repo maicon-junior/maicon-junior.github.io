@@ -348,6 +348,8 @@ blockquote {
         background: linear-gradient(180deg, #ff6600, #690f2d) !important;
         font-size: small !important;
         flex-direction: column !important;
+        align-items: center; /* Centraliza os elementos */
+        justify-content: center; /* Garante a centralização */
     }
 
     #foto3 {
@@ -379,6 +381,34 @@ blockquote {
         background-color: transparent !important;
         border: solid transparent !important;
        
+    }
+    
+    table {
+        width: 100% !important; /* Garantir que a tabela ocupe toda a largura */
+        overflow-x: auto; /* Adiciona rolagem horizontal */
+        display: block; /* Torna a tabela um bloco para facilitar o ajuste */
+    }
+
+    /* Ajustes nas células */
+    th, td {
+        font-size: 12px !important; /* Ajusta o tamanho da fonte na tabela */
+    }
+
+    .recent, .antigo {
+        font-size: 12px !important; /* Ajusta as classes específicas */
+    }
+
+    body {
+        font-size: 14px !important; /* Tamanho de fonte reduzido */
+    }
+
+    /* Fontes específicas também podem ser ajustadas */
+    #titulo, #musica, #arte, .album p, .grid-container div {
+        font-size: 14px !important; /* Ajusta fontes nas seções */
+    }
+    .container {
+        align-items: center; /* Garante que a container esteja centralizada */
+        text-align: center;
     }
 
 }
