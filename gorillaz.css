@@ -307,6 +307,7 @@ blockquote {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: solid black;
+    width: 100%;
 }
 
 /* Cabeçalhos das colunas */
@@ -383,34 +384,6 @@ blockquote {
        
     }
     
-    table {
-        width: 90% !important; /* Garantir que a tabela ocupe toda a largura */
-        margin: 10px auto !important;
-        display: block !important; /* Torna a tabela um bloco para facilitar o ajuste */
-    }
-
-    /* Ajustes nas células */
-    th, td {
-        font-size: 12px !important; /* Ajusta o tamanho da fonte na tabela */
-    }
-
-    .recent, .antigo {
-        font-size: 12px !important; /* Ajusta as classes específicas */
-    }
-
-    body {
-        font-size: 14px !important; /* Tamanho de fonte reduzido */
-    }
-
-    /* Fontes específicas também podem ser ajustadas */
-    #titulo, #musica, #arte, .album p, .grid-container div {
-        font-size: 14px !important; /* Ajusta fontes nas seções */
-    }
-    .container {
-        align-items: center; /* Garante que a container esteja centralizada */
-        text-align: center;
-    }
-
 }
 
 @media (min-width: 600px) {
